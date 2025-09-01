@@ -1,3 +1,4 @@
+-- Passengers --
 CREATE TABLE  "passengers" (
 "id" INTEGER,
 "first_name" TEXT NOT NULL,
@@ -8,7 +9,7 @@ PRIMARY KEY ("id")
 ;
 
 
---Check_Ins--
+-- Check_Ins --
 CREATE TABLE "checkins" (
 "id" INTEGER,
 "passenger_id" NOT NULL,
@@ -21,7 +22,7 @@ FOREIGN KEY ("flight_id") REFERENCES "flights"("id")
 
 
 
--- Airlines--
+-- Airlines --
 
 CREATE TABLE "airlines" (
 "id" INTEGER,
@@ -31,7 +32,7 @@ PRIMARY KEY ("id")
 );
 
 
--- Flights--
+-- Flights --
 
 CREATE TABLE "flights" (
 "id" INTEGER,
